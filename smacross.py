@@ -20,4 +20,4 @@ class SmaCross(Strategy):
 bt = Backtest(GOOG, SmaCross, commission=.002,
               exclusive_orders=True)
 stats = bt.run()
-bt.plot()
+bt.plot(filename="out/smacross.html")
